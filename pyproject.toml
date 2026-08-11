@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chess-boss"
+version = "0.1.0"
+description = "Screen-aware chess coach: detect boards, track moves (UCI/SAN), and guide with Stockfish."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+  "numpy>=1.24,<3",
+  "opencv-python>=4.8,<5",
+  "mss>=9.0,<11",
+  "python-chess>=1.10,<2",
+  "Pillow>=10.0,<12",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[project.scripts]
+chess-boss = "chess_boss.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["chess_boss*"]
