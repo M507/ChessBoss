@@ -2,15 +2,11 @@
 
 A chess master friend beat me at chess, so I decided to ask AI to build me something that could help me beat him at least once. Here are the results:
 
-Guidance overlay while playing White:
+Guidance overlay while playing:
 
 ![White side — Ne5 suggestion](imgs/2026-08-11_21-38.png)
 
-Opening advice with from/to highlights + arrows
-
 ![White side — c4 suggestion](imgs/2026-08-11_21-39.png)
-
-Same coach when the board is flipped — playing as Black (`gxf6`):
 
 ![Black side — gxf6 suggestion](imgs/2026-08-11_21-41.png)
 
